@@ -20,12 +20,12 @@ body{
 }
 
 h1{
-    font-size: 32px;
+    font-size: 38px;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
 h2{
-    font-size: 28px;
+    font-size: 34px;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -49,6 +49,11 @@ label{
 /* style navebar, giving it a padding for desktop */
 nav{
     display:flex;
+    
+    /*test bugfix for IE*/
+    -ms-flex: 1; /* IE 10 */
+    flex: 1;
+
     justify-content:space-between;
     align-items:center;
     background-color: var(--primary-color);
@@ -130,7 +135,8 @@ nav{
 /*show header over hero image*/
 .hero-container{
     position: absolute;
-    background-color: rgba(43, 100, 158,0.7);
+    background-color: rgba(43, 100, 158,0.9);
+    line-height:40px;
     width:100%;
     padding-bottom:1.5rem;
     top: 50%;
@@ -143,7 +149,8 @@ nav{
 }
 
 /*style the wording inside the hero image*/
-.hero-container button{
+.hero-button{
+    width:200px;
     background-color:rgba(0,0,0,0);
     border: 1px solid #fff;
     font:inherit;
@@ -152,14 +159,11 @@ nav{
     padding:10px 20px;
     transition:0.3s;
     outline:none;
-}
-
-.hero-container button a{
     text-decoration:none;
     color:#fff;
 }
 
-.hero-container button:hover{
+.hero-button:hover{
     background-color: var(--secondary-color);
     cursor:pointer;
 }
