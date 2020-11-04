@@ -49,13 +49,9 @@ label{
 /* style navebar, giving it a padding for desktop */
 nav{
     display:flex;
-    
-    /*test bugfix for IE*/
-    -ms-flex: 1; /* IE 10 */
-    flex: 1;
-
     justify-content:space-between;
     align-items:center;
+    background-color:red; /*test fallback for IE since it doesn't like CSS variables*/
     background-color: var(--primary-color);
     font-family: 'Roboto Condensed', sans-serif;
     color:#fff;
@@ -99,7 +95,6 @@ nav{
     position:absolute;
     top:1.2rem;
     right:2rem;
-    left:0;
     display:none;
     flex-direction: column;
     justify-content: space-around;
@@ -146,7 +141,7 @@ nav{
     overflow: hidden;
     text-align: center;
     color:#fff;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 }
 
 /*style the wording inside the hero image*/
