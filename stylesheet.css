@@ -48,6 +48,7 @@ label{
 
 /* style navebar, giving it a padding for desktop */
 nav{
+    display: -ms-flexbox; /*IE nav fix*/
     display:flex;
     justify-content:space-between;
     align-items:center;
