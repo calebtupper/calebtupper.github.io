@@ -1,88 +1,78 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <head>
+        <title>Caleb Tupper</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Tupper Music - Home</title>
-        <meta name="description" content="Tupper Music saves artists time and money by providing professional quality drum tracks faster and at a fraction of the cost of a larger studio.">
-        <meta name="keywords" content="Tupper, Music, Session, Drumming, Virtual, Recording, Drums">
-        <link rel="icon" href="favicon.ico">
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-WPCHWMHX7T"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-WPCHWMHX7T');
-        </script>
+        <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=League+Script&family=Montserrat:ital,wght@0,300;0,500;1,300;1,500&family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="assets/js/jquery-3.5.1.min.js"></script>
+        <script tyle="text/javascript" src="assets/js/script.js"></script>
     </head>
-    <body>
-        <!--mobile responsive nav bar-->
-        <nav>
-            <div class="logo"><a href="index.html"><img src="images/TM-Logo-Web-White.png" alt="Tupper Music" width="50" height="50"></a></div>
-            <div class="burger">
-                <span class="line1"></span>
-                <span class="line2"></span>
-                <span class="line3"></span>
+    <body class="">
+        <div class="light-dark">
+            <div style="position:relative">
+                <div class="toggle-ball"></div>
+                <img src="assets/img/sun-icon.png" alt="Light Mode" />
+                <img src="assets/img/moon-icon.png" alt="Dark Mode" />
             </div>
-            <ul class="nav-links">
-                <li class="top"><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <!--divider line to make the nav bar pop 
-        <div style="height:1px;background-color:#fff"></div>-->
-        <main>   
-            <div class="hero-image">
-                <div class="hero-container">
-                    <h1>Tupper Music</h1>
-                    <h2>Session Drumming</h2>
-                    <a class="hero-button" href="index.html#contact">Let's Connect</a>
+        </div>
+        <div class="container" role="banner">
+            <nav role="navigation" aria-label="Main">
+                <div class="logo" role="img" aria-label="Description of the overall image">
+                    <a href="/index.html">
+                        <h1>
+                            <span class="first">Caleb</span>
+                            <span class="last">Tupper</span>
+                        </h1>
+                    </a>
+                </div>          
+            </nav>
+            <div class="hero tac">
+                <div class="hero-block">
+                    <div class="hero-img1"><a href="/#bio"><h2>Bio</h2></a></div>
+                </div>
+                <div class="hero-block">
+                    <div class="hero-img2"><a href="/music"><h2>Music</h2></a></div>
+                </div>
+                <div class="hero-block">
+                    <div class="hero-img3"><a href="/marketing"><h2>Marketing</h2></a></div>
                 </div>
             </div>
-            <div class="samples">
-                <h3>Featured Recording</h3>
-                <iframe src="https://www.youtube.com/embed/KV62WMnIT_I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+        </div>
+        <div id="bio" class="container">
+            <div class="row">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat dui a lacus cursus, at commodo tellus rhoncus. Vestibulum pretium libero ac neque aliquam mollis. In orci nisi, tincidunt vel dolor eu, viverra dapibus augue. Sed laoreet ipsum purus, vitae feugiat est tristique laoreet. Fusce sollicitudin varius metus, non scelerisque turpis consectetur vel. Nam accumsan neque dictum nisl aliquam, eget tincidunt diam vehicula. Praesent viverra molestie est rutrum auctor. Vestibulum non ligula sollicitudin odio tincidunt lacinia a eget sapien. Nulla consequat ultrices tortor eu sollicitudin. Phasellus cursus nunc sed placerat maximus. Proin accumsan lacinia tempus. Phasellus commodo elit sit amet urna dictum semper non ac leo. Curabitur tempus pharetra purus sit amet auctor. Aenean lorem nibh, vehicula in tellus eget, iaculis rutrum neque. Quisque auctor lacus justo, vitae varius dui mattis sit amet. Aenean lacinia consequat mi a placerat.</p>
+
+                <p>In eu ligula sit amet lacus vestibulum iaculis at ut dolor. Duis fringilla magna sem, consectetur rutrum dui luctus in. Donec varius cursus dolor, ac posuere quam suscipit at. Nam vitae rutrum lacus. Aliquam rhoncus, nunc a vulputate sagittis, est odio dignissim sem, at iaculis dui ex nec lacus. Sed in cursus odio. Vestibulum at ligula vulputate, sollicitudin dolor malesuada, sollicitudin libero. Sed leo odio, mollis vel porta vel, venenatis vitae augue. Ut laoreet felis sem, eu scelerisque nunc vulputate vitae. Fusce porta tempor interdum. Cras mattis laoreet felis nec facilisis. Sed malesuada rutrum est. Vestibulum vitae elit non lorem pharetra tristique. Vestibulum nec lacus sed elit varius facilisis sed a urna. Ut suscipit, lorem quis faucibus placerat, arcu orci placerat nunc, in luctus ipsum enim non leo. Praesent et cursus libero.</p>
             </div>
-            <div id="contact" class="contact">
-                <h3>Let's Connect</h3>
-                <p>Tupper Music saves artists time and money by providing professional quality drum tracks faster and at a fraction of the cost of a larger studio.</p>
-                <p>Whether you need a drummer for your next recording or simply want to chat about music and gear, contact Tupper&nbsp;Music&nbsp;below!</p><br>
-                
-                <script>var submitted=false;</script>
-                
-                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='confirmation.html#contact';}"></iframe>
-                
-                <form action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSdiasT2xuL06_5sWEJ65XoLlPD125yA-x5YUYXYanKOOlCgvA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
-                      <label for="fname">First name:</label><br>
-                      <input type="text" id="fname" placeholder="John" name="entry.1645414052"><br><br>
-                      <label for="lname">Last name:</label><br>
-                      <input type="text" id="lname" placeholder="Smith" name="entry.41007086"><br><br>
-                      <label for="email">Email:</label><br>
-                      <input type="email" id="email" placeholder="jsmith@gmail.com" name="entry.510737254" required><br><br>
-                      <label for="comment">Comment:</label><br>
-                      <textarea id="comment" placeholder="Type your comment here..." name="entry.75790774"></textarea><br><br>
-                      <input type="submit" value="Send">
-                </form>
-            </div>
-        </main>
+        </div>
         <footer>
-            <div>
-                <a href="index.html">Home</a> | 
-                <a href="about.html">About</a> | 
-                <a href="index.html#contact">Contact</a> |
-                <a href="privacy.html">Privacy Policy</a>
-                <br>
-                <p>&#169; Copyright 2020 Tupper Music. All rights reserved.</p>
+            <div class="container">
+                <div class="social-light">
+                    <a href="https://www.instagram.com/caleb.tupper/" target="_blank"><img src="assets/img/web-icons/instagram.png" alt="Instagram" /></a>
+                    <a href="https://www.linkedin.com/in/calebtupper/" target="_blank"><img src="assets/img/web-icons/linkedin.png" alt="LinkedIn" /></a>
+                    <a href="https://open.spotify.com/artist/1KVyAw1KLWNEuEI2D5MtWm" target="_blank"><img src="assets/img/web-icons/spotify.png" alt="Spotify" /></a>
+                    <a href="https://music.apple.com/artist/lyon-hp/1541306142" target="_blank"><img src="assets/img/web-icons/apple-music.png" alt="Apple Music" /></a>
+                </div>
+                <div class="social-dark">
+                    <a href="https://www.instagram.com/caleb.tupper/" target="_blank"><img src="assets/img/web-icons/instagram-white.png" alt="Instagram" /></a>
+                    <a href="https://www.linkedin.com/in/calebtupper/" target="_blank"><img src="assets/img/web-icons/linkedin-white.png" alt="LinkedIn" /></a>
+                    <a href="https://open.spotify.com/artist/1KVyAw1KLWNEuEI2D5MtWm" target="_blank"><img src="assets/img/web-icons/spotify-white.png" alt="Spotify" /></a>
+                    <a href="https://music.apple.com/artist/lyon-hp/1541306142" target="_blank"><img src="assets/img/web-icons/apple-music-white.png" alt="Apple Music" /></a>
+                </div>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/#bio">Bio</a></li>
+                    <li><a href="/music">Music</a></li>
+                    <li><a href="/music">Marketing</a></li>
+                    <li><a href="/privacy.html" target="_blank">Privacy Policy</a></li>
+                </ul>
+                <br />
+                <p class="tac">&copy; Caleb Tupper <span id="year"></span></p>
             </div>
         </footer>
-       
-        <script src="app.js"></script>
     </body>
+    <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
 </html>
-    
