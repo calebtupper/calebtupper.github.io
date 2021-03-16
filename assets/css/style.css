@@ -41,8 +41,9 @@ nav{position:absolute; display:flex; justify-content:space-between; justify-cont
 
 /*Logo Styling*/
 .logo{position:relative; width:213px; height:70px;}
-.logo a{position:absolute; width:100%; height:100%; color:inherit; text-decoration:none;}
-.logo h1{font-size:; font-family: 'League Script', cursive; display:inline;}
+.logo .logo-block{position:absolute; width:100%; height:100%; text-decoration:none;}
+.logo h1{font-size:; font-family: 'League Script', cursive; display:inline; color:#161616;}
+body.dark-mode .logo h1{color:#fefefe;}
 .logo h1 span{position:absolute;}
 .logo h1 span.first{bottom:50%; top:8px}
 .logo h1 span.last{top:19px; left:89.5px;}
