@@ -41,13 +41,13 @@ body.dark-mode .toggle-ball{background-color:#101010; bottom:28px;}
 /*Hero Banner Styling*/
 .hero{display:flex; justify-content:space-between; height:600px; padding:0 15%;}
 .hero .hero-block{display:block; position:relative; width:300px;}
-.hero .hero-block .hero-img1:hover{cursor:pointer; box-shadow:0px 1px 10px rgb(0,0,0,1);}
-.hero .hero-block .hero-img2:hover{cursor:pointer; box-shadow:0px 1px 10px rgb(0,0,0,1);}
-.hero .hero-block .hero-img3:hover{cursor:pointer; box-shadow:0px 1px 10px rgb(0,0,0,1);}
+.hero .hero-block .hero-img1:hover{cursor:pointer; box-shadow:0px 1px 10px rgb(0,0,0,7);}
+.hero .hero-block .hero-img2:hover{cursor:pointer; box-shadow:0px 1px 10px rgb(0,0,0,7);}
+.hero .hero-block .hero-img3:hover{cursor:pointer; box-shadow:0px 1px 10px rgb(0,0,0,7);}
 .hero .hero-block a{text-decoration:none; display:flex; flex-direction:column; justify-content:center;  height:100%; width:100%;}
 .hero .hero-img1{position:absolute; height:400px; top:100px; width:100%; background-color:red; box-shadow:0px 1px 5px rgb(0,0,0,.5);}
-.hero .hero-img2{position:absolute; height:400px; top:50px; width:100%; background-color:green; box-shadow:0px 1px 5px rgb(0,0,0,.5)}
-.hero .hero-img3{position:absolute; height:400px; top:150px; width:100%; background-color:blue; box-shadow:0px 1px 5px rgb(0,0,0,.5)}
+.hero .hero-img2{position:absolute; height:400px; top:50px; width:100%; background-color:green; box-shadow:0px 1px 5px rgb(0,0,0,.5);}
+.hero .hero-img3{position:absolute; height:400px; top:150px; width:100%; background-color:blue; box-shadow:0px 1px 5px rgb(0,0,0,.5);}
 .hero h2{color:#fefefe;}
 
 /*Footer Styling*/
