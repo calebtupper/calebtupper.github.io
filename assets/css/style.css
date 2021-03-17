@@ -13,10 +13,14 @@ h1{font-size:3rem; font-family: 'montserrat', sans-serif; font-weight:500;}
 h2{font-size:2rem; font-family: 'Roboto', sans-serif; font-weight: 700;}
 h3{font-size:1.5rem; font-family: 'Roboto', sans-serif; font-weight:300;}
 h4{font-size:1.1rem; font-family: 'Roboto', sans-serif; font-weight:300;}
-p{font-size:1rem; font-family: 'montserrat', sans-serif; font-weight:300; text-align:left; margin-bottom:5px;}
-a{font-size:1rem; font-family: 'montserrat', sans-serif; font-weight:300;}
+p{font-size:1rem; font-family: 'montserrat', sans-serif; font-weight:300; text-align:left; margin-bottom:15px;}
+a{font-size:1rem; font-family: 'montserrat', sans-serif; font-weight:300; color:#2E7EB5; text-decoration:none;}
+a:hover{color:#6FC2E9; cursor:pointer;}
 li{font-size:1rem; font-family: 'montserrat', sans-serif; font-weight:300;margin-bottom:5px; margin-left: 25px;}
 hr{background-image: linear-gradient(to right,transparent,#ccc,transparent);border:0; height:1px; margin:8px 0;}
+
+body.dark-mode a{color:#6FC2E9;}
+body.dark-mode a:hover{color:#2E7EB5;}
 
 /*Text-Align Classes*/
 .tar{text-align:right;}
@@ -35,7 +39,7 @@ body.dark-mode .toggle-ball{background-color:#101010; bottom:28px;}
 /*Layout Styling*/
 .container{width:100%;}
 .container .row{display:block; padding:30px 15%;}
-.container .row .row-header{display:inline-block; float:left; width:33%; margin-top:50px;}
+.container .row .row-header{display:inline-block; float:left; width:33%; margin-top:30px;}
 .container .row .row-content{display:inline-block; width:66%;}
 
 /*Hero Banner Styling*/
@@ -44,7 +48,7 @@ body.dark-mode .toggle-ball{background-color:#101010; bottom:28px;}
 .hero .hero-block .hero-img1:hover{cursor:pointer; box-shadow:0px 1px 10px rgb(0,0,0,7);}
 .hero .hero-block .hero-img2:hover{cursor:pointer; box-shadow:0px 1px 10px rgb(0,0,0,7);}
 .hero .hero-block .hero-img3:hover{cursor:pointer; box-shadow:0px 1px 10px rgb(0,0,0,7);}
-.hero .hero-block a{text-decoration:none; display:flex; flex-direction:column; justify-content:center;  height:100%; width:100%;}
+.hero .hero-block a{display:flex; flex-direction:column; justify-content:center;  height:100%; width:100%;}
 .hero .hero-img1{position:absolute; height:400px; top:100px; width:100%; background-color:red; box-shadow:0px 1px 5px rgb(0,0,0,.5);}
 .hero .hero-img2{position:absolute; height:400px; top:50px; width:100%; background-color:green; box-shadow:0px 1px 5px rgb(0,0,0,.5);}
 .hero .hero-img3{position:absolute; height:400px; top:150px; width:100%; background-color:blue; box-shadow:0px 1px 5px rgb(0,0,0,.5);}
@@ -58,8 +62,10 @@ footer .social-dark{display:none;}
 body.dark-mode footer .social-light{display:none;}
 body.dark-mode footer .social-dark{display:block;}
 footer ul li{list-style:none; display:inline; margin:0; padding:5px;}
-footer ul li a{text-decoration:none; color:inherit;}
+footer ul li a{color:#161616;}
 footer ul li a:hover{cursor:pointer; color:#aaa;}
+body.dark-mode footer ul li a{color:#fefefe;}
+body.dark-mode footer ul li a:hover {color:#aaa;}
 
 
 /*Responsive Styling*/
