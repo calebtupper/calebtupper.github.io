@@ -66,8 +66,8 @@ footer img{width:50px; height:50px; margin:0 15px;}
 footer .social-light{display:block; margin:15px 0;}
 footer .social-dark{display:none;}
 body.dark-mode footer .social-light{display:none;}
-body.dark-mode footer .social-dark{display:block; margin:15px 0;}
-footer ul li{list-style:none; display:inline;}
+body.dark-mode footer .social-dark{display:block;}
+footer ul li{list-style:none; display:inline; margin:0; padding:5px;}
 footer ul li a{text-decoration:none; color:inherit;}
 footer ul li a:hover{cursor:pointer; color:#aaa;}
 
