@@ -53,7 +53,7 @@ body.dark-mode .toggle-ball{background-color:#101010; bottom:28px;}
 /*Footer Styling*/
 footer{text-align:center; padding:25px 10%;}
 footer img{width:50px; height:50px; margin:0 15px;}
-footer .social-light{display:block; margin:15px 0;}
+footer .social-light{display:block; margin:0;}
 footer .social-dark{display:none;}
 body.dark-mode footer .social-light{display:none;}
 body.dark-mode footer .social-dark{display:block;}
