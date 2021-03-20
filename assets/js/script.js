@@ -3,21 +3,13 @@ const cookieValue = document.cookie
   .find(row => row.startsWith('color-mode='))
   .split('=')[1];
 
-function alertCookieValue() {
-  alert(cookieValue);
-}
-
-
 /*JQuery Light-Dark Mode Selector and Cookie*/
 $(document).ready(function(){
-    if($("body").hasClass("dark-mode")){
-                setCookie("color-mode","dark",30);
+    if(cookieValue = "dark"){
+                $("body").toggleClass("dark-mode");
             }
-            else{   
-                setCookie("color-mode","light",30);
-            }
-    
-    
+            else{}
+    alert(cookieValue);
     $("div.light-dark").click(function(){
             $("body").toggleClass("dark-mode");
         
