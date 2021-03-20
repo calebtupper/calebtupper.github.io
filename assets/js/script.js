@@ -2,11 +2,13 @@
 $(document).ready(function(){
     $("div.light-dark").click(function(){
             $("body").toggleClass("dark-mode");
+        
             if($("body").hasClass("dark-mode")){
                 setCookie("color","dark",30);
             }
-            else(){}   
+            else(){   
                 setCookie("color","light",30);
+            }
         });
 }); 
 
