@@ -1,9 +1,5 @@
 /*JQuery Light-Dark Mode Selector and Cookie*/
 $(document).ready(function(){
-    if($("body").hasClass("dark-mode")){
-               $("body").toggleClass("dark-mode");
-            }
-    else{}
     $("div.light-dark").click(function(){
             $("body").toggleClass("dark-mode");
             if($("body").hasClass("dark-mode")){
