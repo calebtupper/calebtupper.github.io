@@ -1,16 +1,15 @@
-
 /*JQuery*/
 $(document).ready(function(){
     $("div.light-dark").click(function(){
-            $("body").toggleClass("dark-mode"); 
+            $("body").toggleClass("dark-mode");
+            setCookie("color","dark",1);
         });
-    
-    $("nav ul li").click(function(){
-        var target = $(this).attr("data-target");
-        alert(target);
-    }); 
-    $("a.nav-logo img").on("darkMode",function(){
-       $("a.nav-logo img").attr("src","/assets/img/TM-Logo-Web-White.png"); 
-        
-    });
 }); 
+
+function setCookie(cname, cvalue, exhours){
+    var date = new Date();
+    date.setTime(date.getTime()+exhours*60*60*1000);
+    var expires = "; expires =" + date.toGMTString();
+    document.cookie = cname+"="+cvalue+expires+";path=/"
+}
+
