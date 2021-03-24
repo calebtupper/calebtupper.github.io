@@ -15,7 +15,6 @@ $(document).ready(function(){
             else{   
                 setCookie("color","light",30);
             }
-            ga("send", "event", "dark_mode_toggle", "dark_mode_toggle_click", color);
         });
 }); 
 
