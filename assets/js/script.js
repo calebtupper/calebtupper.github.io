@@ -15,12 +15,7 @@ $(document).ready(function(){
             else{   
                 setCookie("color","light",30);
             }
-            ga("send", {
-                    hitType: "event",
-                    eventCategory: "Dark Mode Toggle",
-                    eventAction: "Select Color Mode",
-                    eventLabel: color
-            });
+            ga("send", "event", "dark_mode_toggle", "dark_mode_toggle_click", color);
         });
 }); 
 
