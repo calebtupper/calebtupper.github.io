@@ -11,14 +11,18 @@ $(document).ready(function(){
             $("body").toggleClass("dark-mode");
             if($("body").hasClass("dark-mode")){
                 setCookie("color","dark",30);
+                dataLayer.push({
+                  'color': 'dark',
+                  'event': 'dark_mode_toggle'
+                });
             }
             else{   
                 setCookie("color","light",30);
-            }
-            dataLayer.push({
-              'color': color,
-              'event': 'dark_mode_toggle'
+                dataLayer.push({
+                  'color': 'light',
+                  'event': 'dark_mode_toggle'
             });
+            }
         });
 }); 
 
