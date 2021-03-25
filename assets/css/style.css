@@ -7,6 +7,8 @@ body,nav,div,span,h1,h2,h3,h4,h5,p,ul,li,a,img{margin:0;padding:0; box-sizing:bo
 
 body{background-color:#fefefe; color:#161616;}
 body.dark-mode{background-color:#1e2427; color:#fefefe;}
+body .light{}
+body .dark{display:none;}
 
 /*Main Styling*/
 h1{font-size:3rem; font-family: 'montserrat', sans-serif; font-weight:500;}
@@ -41,6 +43,9 @@ body.dark-mode .toggle-ball{background-color:#101010; bottom:28px;}
 .container .row{display:block; padding:30px 15%;}
 .container .row .row-header{display:inline-block; float:left; width:33%; margin-top:30px;}
 .container .row .row-content{display:inline-block; width:66%;}
+.container .row.dark{display:none;}
+body.dark-mode .row.light{display:none;}
+body.dark-mode .row.dark{display:block;}
 
 /*Hero Banner Styling*/
 .hero{display:flex; justify-content:space-between; height:600px; padding:0 15%;}
@@ -54,6 +59,17 @@ body.dark-mode .toggle-ball{background-color:#101010; bottom:28px;}
 .hero .hero-img2{position:absolute; height:400px; top:50px; width:100%; background-image:url(../img/caleb-tupper-profile.jpg); background-size:cover; background-position:50% 30%; box-shadow:0px 1px 5px rgb(0,0,0,.5);}
 .hero .hero-img3{position:absolute; height:400px; top:110px; width:100%; background-image:url(../img/handshake.jpg); background-position:50% 60%; background-size:cover; box-shadow:0px 1px 5px rgb(0,0,0,.5);}
 .hero h2{color:#fefefe;text-shadow:0px 1px 3px rgb(0,0,0,.3);}
+
+/*Link Tree Styling*/
+.link-tree{min-height:600px;}
+.link-tree h2{font-weight:300;}
+.link-list{display:flex; text-align:center;}
+.link-box{display:block; width:40%; min-width:300px; margin: 15px auto; padding:15px; border:2px solid #161616;}
+.link-box p{font-size:18px; display:inline-block; text-align:center; text-decoration:none; color:#161616; margin:0;}
+.link-box img{width:40px; height:40px; vertical-align:middle; margin-bottom:3px; display:inline-block;}
+.link-box:hover{cursor:pointer; box-shadow:0px 1px 5px rgb(0,0,0,0.5);}
+body.dark-mode .link-box{border-color:#fefefe;}
+body.dark-mode .link-box p{color:#fefefe;}
 
 /*Footer Styling*/
 footer{text-align:center; padding:25px 10%;}
@@ -96,6 +112,8 @@ body.dark-mode footer ul li a:hover {color:#aaa;}
     .container .row {padding:20px 15px;}
     .container .row .row-header{display:block; width:100%; margin:0 0 20px;}
     .container .row .row-content{display:block; width:100%;}
+    .link-list{text-align:center;}
+    .link-box{margin:15px auto;}
     .hero{display:block; height:350px; padding: 0;}
     .hero .hero-block{width:100%; height:100px;}
     .hero .hero-block img{width:100%;}
