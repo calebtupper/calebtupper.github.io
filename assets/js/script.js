@@ -15,6 +15,10 @@ $(document).ready(function(){
             else{   
                 setCookie("color","light",30);
             }
+            dataLayer.push({
+              'color': color,
+              'event': 'dark_mode_toggle'
+            });
         });
 }); 
 
