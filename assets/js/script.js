@@ -26,6 +26,15 @@ $(document).ready(function(){
         });
 }); 
 
+/*FAQ Buttons*/
+$(document).ready(function(){
+   $(".faq").click(function(){
+       $(this).find("p").slideToggle("fast");
+       $(this).find(".plus").toggle();
+       $(this).find(".minus").toggle();
+   }); 
+});
+
 /*Set Cookie JS*/
 function setCookie(cname, cvalue, exdays){
     var date = new Date();
