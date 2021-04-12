@@ -81,11 +81,11 @@ body.dark-mode .alt{background-color:#2c353a;}
 .link-tree{min-height:600px;}
 .link-tree h2{font-weight:300;}
 .link-list{display:flex; text-align:center;}
-.link-box{display:block; width:40%; min-width:300px; margin: 15px auto; padding:15px; border:2px solid #161616;}
+.link-box{display:block; background-color:#ededed; width:40%; min-width:300px; margin: 15px auto; padding:15px; border-radius:30px;}
 .link-box p{font-size:18px; display:inline-block; text-align:center; text-decoration:none; color:#161616; margin:0;}
 .link-box img{width:40px; height:40px; vertical-align:middle; margin-bottom:3px; display:inline-block;}
 .link-box:hover{cursor:pointer; box-shadow:0px 1px 5px rgb(0,0,0,0.5);}
-body.dark-mode .link-box{border-color:#fefefe;}
+body.dark-mode .link-box{background-color:#2c353a;}
 body.dark-mode .link-box p{color:#fefefe;}
 
 /*FAQ Styling*/
