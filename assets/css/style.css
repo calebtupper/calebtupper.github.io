@@ -44,7 +44,7 @@ body.dark-mode .toggle-ball{background-color:#101010; bottom:28px;}
 .container{width:100%;}
 .container .row{display:block; padding:30px 15%;}
 .container .row.dark{display:none;}
-.alt{background-color:#ededed}
+.alt{background-color:#ddd;}
 .btn{display:inline-block; background-color:#161616; color:#fefefe; padding:5px 15px; border-radius:50px; margin:10px 15px;}
 .btn:hover{background-color:#444; color:#fefefe; cursor:pointer;}
 body.dark-mode .header h1{color:#fefefe;}
@@ -59,29 +59,16 @@ body.dark-mode .alt{background-color:#2c353a;}
 .first{margin-left:0;}
 .last{margin-right:0;}
 
-/*Hero Banner Styling*/
-.hero{display:flex; justify-content:space-between; height:600px; padding:0 15%;}
-.hero .hero-block{display:block; position:relative; width:300px;}
-.hero .hero-block img{width:300px; height:auto;}
-.hero .hero-block .hero-img1:hover{cursor:pointer; box-shadow:0px 1px 10px rgb(0,0,0,.7);}
-.hero .hero-block .hero-img2:hover{cursor:pointer; box-shadow:0px 1px 10px rgb(0,0,0,.7);}
-.hero .hero-block .hero-img3:hover{cursor:pointer; box-shadow:0px 1px 10px rgb(0,0,0,.7);}
-.hero .hero-block a{display:flex; flex-direction:column; justify-content:center;  height:100%; width:100%;}
-.hero .hero-img1{position:absolute; height:400px; top:110px; width:100%; background-image:url(../img/holding-phone-with-social-icons.jpg); background-position:center; background-size:cover; box-shadow:0px 1px 5px rgb(0,0,0,.5);}
-.hero .hero-img2{position:absolute; height:400px; top:50px; width:100%; background-image:url(../img/caleb-tupper-profile.jpg); background-size:cover; background-position:50% 30%; box-shadow:0px 1px 5px rgb(0,0,0,.5);}
-.hero .hero-img3{position:absolute; height:400px; top:110px; width:100%; background-image:url(../img/handshake.jpg); background-position:50% 60%; background-size:cover; box-shadow:0px 1px 5px rgb(0,0,0,.5);}
-.hero h2{color:#fefefe;text-shadow:0px 1px 3px rgb(0,0,0,.3);}
-
 /*Banner Styling*/
-.banner{position:relative; width:100%; height:300px; padding:30px 0; background-image:url(../img/mastering-background.jpg); background-position:center; background-size:cover; overflow:hidden;}
-.banner h2{position:absolute; display:block; width: 100%; color:#fefefe; left:50%; bottom:50%; transform:translate(-50%,50%);}
-.banner .btn{position:absolute; margin:0; left:50%; bottom:30px; transform:translateX(-50%); box-shadow:0px 1px 20px rgb(255,255,255,0.7);}
+.banner{position:relative; width:100%; height:500px; padding:30px 0; background-image:url(../img/Test-Background.png); background-position:center; background-size:cover; overflow:hidden; text-align:left;}
+.banner h2{display:block; margin-top:140px; font-size:2.5rem; color:#fefefe; text-shadow:0px 0px 10px #161616;}
+.banner .btn{padding:10px 30px; margin-top:0;}
 
 /*Link Tree Styling*/
 .link-tree{min-height:600px;}
 .link-tree h2{font-weight:300;}
 .link-list{display:flex; text-align:center;}
-.link-box{display:block; background-color:#ededed; width:40%; min-width:300px; margin: 15px auto; padding:15px; border-radius:50px;}
+.link-box{display:block; background-color:#ddd; width:40%; min-width:300px; margin: 15px auto; padding:15px; border-radius:50px;}
 .link-box p{font-size:18px; display:inline-block; text-align:center; text-decoration:none; color:#161616; margin:0;}
 .link-box img{width:40px; height:40px; vertical-align:middle; margin-bottom:3px; display:inline-block;}
 .link-box:hover{cursor:pointer; box-shadow:0px 1px 5px rgb(0,0,0,0.5);}
@@ -89,7 +76,7 @@ body.dark-mode .link-box{background-color:#2c353a;}
 body.dark-mode .link-box p{color:#fefefe;}
 
 /*FAQ Styling*/
-.faq{background-color:#ededed; width:100%; margin:20px 0; padding:15px; border-radius:30px;}
+.faq{background-color:#ddd; width:100%; margin:20px 0; padding:15px; border-radius:30px;}
 .faq h3{font-size:1.1rem; font-weight:500;}
 .faq p{display:none;}
 .faq i{font-weight:700; font-size:1.5rem; margin-right:10px;}
@@ -113,15 +100,10 @@ body.dark-mode footer ul li a:hover {color:#aaa;}
 
 /*Responsive Styling*/
 @media screen and (max-width:1330px){
-    .hero .hero-block{width:250px;}
-    .hero .hero-block img{width:250px;}
-    .hero .hero-img1{height:333px;}
-    .hero .hero-img2{height:333px;}
-    .hero .hero-img3{height:333px;}
 }
 
 @media screen and (max-width:1130px){
-    nav, .hero{padding:0 10%;}
+    nav{padding:0 10%;}
     .container .row {padding:30px 10%;}
 }
 
@@ -129,7 +111,7 @@ body.dark-mode footer ul li a:hover {color:#aaa;}
 @media screen and (max-width:949px){
     .light-dark{left:87%; z-index:10;}
     nav ul{display:none;}
-    nav, .hero{padding:0 5%;}
+    nav{padding:0 5%;}
     .container .row {padding:20px 5%;}
 }
 
@@ -139,14 +121,8 @@ body.dark-mode footer ul li a:hover {color:#aaa;}
     .link-box{min-width:230px; padding:7px 15px;}
     .cta{text-align:center; margin-top:20px;}
     .btn{max-width:190px; margin:15px 5px; padding:8px 15px;}
-    .hero{display:block; height:350px; padding: 0;}
-    .hero .hero-block{width:100%; height:100px;}
-    .hero .hero-block img{width:100%;}
-    .hero .hero-img1{position:relative; top:auto; height:100px;}
-    .hero .hero-img2{position:relative; top:auto; height:100px;}
-    .hero .hero-img3{position:relative; top:auto; height:100px;}
-    .banner{border-radius:0px 0px 30px 30px;}
-    .banner .btn{bottom: 20px;}
+    .banner{border-radius:0px 0px 30px 30px; text-align: center;}
+    .banner h2{margin-top:130px;}
     footer img{margin:0 5px;}
     footer ul li{list-style:none; display:block;}
 }
