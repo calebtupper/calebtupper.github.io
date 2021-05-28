@@ -126,6 +126,7 @@ body.dark-mode footer ul li a:hover {color:#aaa;}
     .btn{max-width:250px; margin:15px 5px; padding:8px 15px;}
     .banner{text-align: center;}
     .banner h2{margin-top:130px;}
+    .banner-bg{border-radius:0px 0px 30px 30px;}
     footer img{margin:0 5px;}
     footer ul li{list-style:none; display:block;}
 }
