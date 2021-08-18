@@ -62,5 +62,18 @@ function getCookie(cname) {
   return "";
 }
 $(window).resize(function(){
-   $(".banner").css("height",$(window).height()-$(".header").height()); 
+    $(".banner").css("height",$(window).height()-$(".header").height());
+    
+    if($(window).width() > 769){
+        $(".banner-bg").css("border-radius","0"); 
+    }
 });
+$(window).scroll(function(){
+    $(".banner h2").fadeIn();
+    $(".banner a").fadeIn();
+
+    if($(window).width() < 770){
+        $(".banner-bg").css("border-radius","0px 0px 30px 30px"); 
+    }
+});
+    
