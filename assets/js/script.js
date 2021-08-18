@@ -3,9 +3,6 @@
 $(document).ready(function(){
     $(".banner").css("height",$(window).height()-$(".header").height());
     $(".banner h2").css("margin-top",$(window).height() / 3 - 30);
-    if($(window).height() < 500){
-        $(".banner h2").css("margin-top","150px"); 
-    }
     
     var color = getCookie("color");
     if(color == "dark"){
@@ -71,9 +68,6 @@ $(window).resize(function(){
     
     if($(window).width() > 769){
         $(".banner-bg").css("border-radius","0"); 
-    }
-    if($(window).height() < 500){
-        $(".banner h2").css("margin-top","150px"); 
     }
 });
 $(window).scroll(function(){
