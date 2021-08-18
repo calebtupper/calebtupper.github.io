@@ -1,6 +1,8 @@
 
 /*JQuery Light-Dark Mode Selector and Cookie*/
 $(document).ready(function(){
+    $(".banner").css("height",$(window).height()-$(".header").height());
+    
     var color = getCookie("color");
     if(color == "dark"){
         $("body").toggleClass("dark-mode");
@@ -59,3 +61,6 @@ function getCookie(cname) {
   }
   return "";
 }
+$(window).resize(function(){
+   $(".banner").css("height",$(window).height()-$(".header").height()); 
+});
