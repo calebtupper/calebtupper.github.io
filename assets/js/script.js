@@ -80,5 +80,8 @@ $(window).resize(function(){
 $(window).scroll(function(){
     $(".banner h2").fadeIn();
     $(".banner a").fadeIn();
+    if($(window).width() < 770){
+        $(".banner-bg").css("border-radius","0px 0px 30px 30px"); 
+    }
 });
     
