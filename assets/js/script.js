@@ -2,6 +2,7 @@
 /*JQuery Light-Dark Mode Selector and Cookie*/
 $(document).ready(function(){
     $(".banner").css("height",$(window).height()-$(".header").height());
+    $(".banner h2").css("margin-top",$(window).height() / 3 - 30);
     
     var color = getCookie("color");
     if(color == "dark"){
@@ -63,6 +64,7 @@ function getCookie(cname) {
 }
 $(window).resize(function(){
     $(".banner").css("height",$(window).height()-$(".header").height());
+    $(".banner h2").css("margin-top",$(window).height() / 3 - 30);
     
     if($(window).width() > 769){
         $(".banner-bg").css("border-radius","0"); 
