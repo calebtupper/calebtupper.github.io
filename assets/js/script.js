@@ -3,11 +3,12 @@
 $(document).ready(function(){
     $(".banner").css("height",$(window).height()-$(".header").height());
     $(".banner h2").css("margin-top",$(window).height() / 3 - 30);
-    if($(window).height() < 500){
-        $(".banner h2").css("margin-top",200); 
+    if($(window).width() < 770){
+        $(".banner h2").css("margin-top",$(window).height() / 3 - 10);
     }
-    
-    
+    if($(window).height() < 500){
+        $(".banner h2").css("margin-top",136); 
+    }
     var color = getCookie("color");
     if(color == "dark"){
         $("body").toggleClass("dark-mode");
@@ -69,12 +70,14 @@ function getCookie(cname) {
 $(window).resize(function(){
     $(".banner").css("height",$(window).height()-$(".header").height());
     $(".banner h2").css("margin-top",$(window).height() / 3 - 30);
-    
     if($(window).width() > 769){
         $(".banner-bg").css("border-radius","0"); 
     }
+    if($(window).width() < 770){
+        $(".banner h2").css("margin-top",$(window).height() / 3 - 15);
+    }
     if($(window).height() < 500){
-        $(".banner h2").css("margin-top",200); 
+        $(".banner h2").css("margin-top",136); 
     }
 });
 $(window).scroll(function(){
