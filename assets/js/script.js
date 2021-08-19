@@ -4,7 +4,7 @@ $(document).ready(function(){
     $(".banner").css("height",$(window).height()-$(".header").height());
     $(".banner h2").css("margin-top",$(window).height() / 3 - 30);
     if($(window).width() < 770){
-        $(".banner h2").css("margin-top",$(window).height() / 3 - 10);
+        $(".banner h2").css("margin-top",$(window).height() / 3 - 40);
     }
     if($(window).height() < 500){
         $(".banner h2").css("margin-top",136); 
@@ -74,7 +74,7 @@ $(window).resize(function(){
         $(".banner-bg").css("border-radius","0"); 
     }
     if($(window).width() < 770){
-        $(".banner h2").css("margin-top",$(window).height() / 3 - 15);
+        $(".banner h2").css("margin-top",$(window).height() / 3 - 40);
     }
     if($(window).height() < 500){
         $(".banner h2").css("margin-top",136); 
