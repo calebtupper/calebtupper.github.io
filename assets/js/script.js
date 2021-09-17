@@ -1,6 +1,9 @@
 
 /*JQuery Light-Dark Mode Selector and Cookie*/
 $(document).ready(function(){
+    $(".banner h2").delay( 800 ).fadeIn();
+    $(".banner a").delay( 1600 ).fadeIn();
+    
     $(".banner").css("height",$(window).height()-$(".header").height());
     $(".banner h2").css("margin-top",$(window).height() / 3 - 30);
     if($(window).width() < 770){
@@ -81,8 +84,6 @@ $(window).resize(function(){
     }
 });
 $(window).scroll(function(){
-    $(".banner h2").fadeIn();
-    $(".banner a").fadeIn();
     if($(window).width() < 770){
         $(".banner-bg").css("border-radius","0px 0px 30px 30px"); 
     }
