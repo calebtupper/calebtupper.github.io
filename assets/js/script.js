@@ -85,7 +85,8 @@ $(window).resize(function(){
 });
 $(window).scroll(function(){
     if($(window).width() < 770){
-        $(".banner-bg").css("border-radius","0px 0px 30px 30px"); 
+        $(".banner-bg").css("border-radius","0px 0px 30px 30px");
+        $(".banner").css("border-radius","0px 0px 30px 30px"); 
     }
 });
     
