@@ -48,7 +48,7 @@ body.dark-mode .toggle-ball{background-color:#101010; bottom:28px;}
 .header h1{color:#161616;}
 .header h1:hover{color:#161616;}
 .container{width:100%;}
-.container .row{display:block; padding:45px 15%;}
+.container .row{display:block; padding:75px 15%;}
 .container .row.dark{display:none;}
 .alt{background-color:#ddd;}
 .btn{display:inline-block; background-color:#161616; color:#fefefe; padding:8px 30px; border-radius:50px; margin:10px 15px;}
@@ -86,10 +86,11 @@ body.dark-mode .link-box{background-color:#2c353a;}
 body.dark-mode .link-box p{color:#fefefe;}
 
 /*Bio Styling*/
-.cred1, .cred2{width:30vw; height:30vw; max-width:350px; max-height:350px; min-width: 300px; min-height:300px; text-align:center;  border-radius:30px; color:#161616 !important;}
-.cred1{display:inline-block; margin:-10px 0 0; padding:20px 0; float:left;}
-.cred2{display:none; margin:30px auto; padding:10px 10px 20px; float:center;}
-.cred1 img, .cred2 img{width:80%; height:80%; display:block; background-color:#fff; padding:5px; margin:0 auto; }
+.cred1, .cred2{width: 300px; border-radius:30px; color:#161616 !important;}
+.cred1{display:inline-block; margin:0 15px 0 0; float:left; text-align:center;}
+.cred2{display:none; margin:25px auto 0; text-align:left;}
+.cred2 p{text-align:center; padding-top:40px;}
+.cred1 img, .cred2 img{width:80%; height:80%; display:block; background-color:#fff; padding:5px; margin:20px auto 0; }
 body.dark-mode .cred1, body.dark-mode .cred2{color:#fefefe !important;}
 
 /*FAQ Styling*/
@@ -137,15 +138,13 @@ body.dark-mode footer ul li a:hover {color:#aaa;}
 
 @media screen and (max-width:769px){
     nav{padding:0 15px;}
-    .container .row {padding:30px 15px;}
+    .container .row {padding:40px 15px;}
     .link-box{min-width:230px; padding:7px 15px;}
     .cta{text-align:center; margin-top:20px;}
-    .btn{display:block; max-width:200px; text-align:center; margin:15px auto; padding:8px 15px;}
+    .btn{display:block; max-width:200px; text-align:center; margin:15px 0; padding:8px 15px;}
     .banner{text-align: center;}
     .banner h2{margin-top:50%;}
     .banner .btn{margin-top:15px;}
-    h2{text-align:center;}
-    h3{text-align:center;}
     .cred1{display:none;}
     .cred2{display:block; text-align:center;}
     footer img{margin:0 5px;}
