@@ -86,7 +86,7 @@ body.dark-mode .link-box{background-color:#2c353a;}
 body.dark-mode .link-box p{color:#fefefe;}
 
 /*Experience Styling*/
-.social img{width:75px; height:75px; margin:0 15px;}
+.social img{width:60px; height:60px; margin:0 15px;}
 .cred1, .cred2{width:30vw; height:30vw; max-width:350px; max-height:350px; min-width: 300px; min-height:300px; text-align:center; background-color:#fefefe; border-radius:30px; color:#161616 !important;}
 
 .cred1{display:inline-block; margin:-10px 15px 0 0; padding:20px 10px 0; float:left;}
