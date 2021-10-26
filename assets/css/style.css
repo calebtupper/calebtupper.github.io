@@ -7,8 +7,10 @@ body,nav,div,span,h1,h2,h3,h4,h5,p,ul,li,a,img{margin:0;padding:0; box-sizing:bo
 
 body{background-color:#fefefe; color:#161616;}
 body.dark-mode{background-color:#1e2427; color:#fefefe;}
-body .light{}
+body .light{display:inherit;}
 body .dark{display:none;}
+body.dark-mode .light{display:none;}
+body.dark-mode .dark{display:inherit;}
 
 /*Main Styling*/
 h1{font-size:3rem; font-family: 'montserrat', sans-serif; font-weight:500;}
