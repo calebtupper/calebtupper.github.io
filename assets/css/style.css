@@ -53,6 +53,7 @@ body.dark-mode .toggle-ball{background-color:#101010; bottom:28px;}
 .alt{background-color:#ddd;}
 .btn{display:inline-block; background-color:#161616; color:#fefefe; padding:5px 15px; border-radius:50px; margin:10px 15px;}
 .btn:hover{background-color:#2c353a; color:#fefefe; cursor:pointer;}
+.clearfix:after {content: ""; display: table; clear: both;}
 body.dark-mode .header h1{color:#fefefe;}
 body.dark-mode .header h1:hover{color:#fefefe;}
 body.dark-mode .row.light{display:none;}
@@ -85,7 +86,12 @@ body.dark-mode .link-box{background-color:#2c353a;}
 body.dark-mode .link-box p{color:#fefefe;}
 
 /*Experience Styling*/
+.social img{width:50px; height:50px; margin:0 15px;}
+.cred1, .cred2{width:30vw; height:30vw; max-width:350px; max-height:350px; min-width: 300px; min-height:300px; text-align:center; background-color:#fefefe; border-radius:30px; color:#161616 !important;}
 
+.cred1{display:inline-block; margin:0 15px 0 0; padding:20px 10px 0; float:left;}
+.cred2{display:none; margin:30px auto; padding:10px 10px 20px; float:center;}
+.cred1 img, .cred2 img{width:80%; height:80%; display:block; margin:0 auto; }
 
 /*FAQ Styling*/
 .faq{background-color:#ddd; width:100%; margin:20px 0; padding:15px; border-radius:30px;}
@@ -125,6 +131,7 @@ body.dark-mode footer ul li a:hover {color:#aaa;}
     nav ul{display:none;}
     nav{padding:0 5%;}
     .container .row {padding:20px 5%;}
+    h2{font-size:1.75rem;}
 }
 
 @media screen and (max-width:769px){
@@ -135,10 +142,14 @@ body.dark-mode footer ul li a:hover {color:#aaa;}
     .container .row {padding:30px 15px;}
     .link-box{min-width:230px; padding:7px 15px;}
     .cta{text-align:center; margin-top:20px;}
-    .btn{max-width:250px; margin:15px 5px; padding:8px 15px;}
+    .btn{display:block; max-width:200px; text-align:center; margin:15px auto; padding:8px 15px;}
     .banner{text-align: center;}
     .banner h2{margin-top:50%;}
     .banner .btn{margin-top:15px;}
+    h2{text-align:center;}
+    .social{text-align:center;}
+    .cred1{display:none;}
+    .cred2{display:block; text-align:center;}
     footer img{margin:0 5px;}
     footer ul li{list-style:none; display:block;}
     p{line-height:130%;}
