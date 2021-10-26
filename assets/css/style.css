@@ -121,10 +121,7 @@ body.dark-mode footer ul li a:hover {color:#aaa;}
 
 @media screen and (max-width:1130px){
     nav{padding:0 10%;}
-    .container .row {padding:30px 10%;}
-    :root{
-        font-size:16px;
-    }
+    .container .row {padding:75px 10%;}
 }
 
 
@@ -134,11 +131,12 @@ body.dark-mode footer ul li a:hover {color:#aaa;}
     nav{padding:0 5%;}
     .container .row {padding:20px 5%;}
     h2{font-size:1.75rem;}
+    h3{font-size:1.35rem;}
 }
 
 @media screen and (max-width:769px){
     nav{padding:0 15px;}
-    .container .row {padding:40px 15px;}
+    .container .row {padding:45px 15px;}
     .link-box{min-width:230px; padding:7px 15px;}
     .cta{text-align:center; margin-top:20px;}
     .btn{display:block; max-width:200px; text-align:center; margin:15px 0; padding:8px 15px;}
@@ -149,5 +147,5 @@ body.dark-mode footer ul li a:hover {color:#aaa;}
     .cred2{display:block; text-align:center;}
     footer img{margin:0 5px;}
     footer ul li{list-style:none; display:block;}
-    p{line-height:130%;}
+    p{line-height:135%;}
 }
