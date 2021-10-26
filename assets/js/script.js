@@ -75,6 +75,7 @@ $(window).resize(function(){
     $(".banner h2").css("margin-top",$(window).height() / 3 - 30);
     if($(window).width() > 769){
         $(".banner-bg").css("border-radius","0"); 
+        $(".banner").css("border-radius","0"); 
     }
     if($(window).width() < 770){
         $(".banner h2").css("margin-top",$(window).height() / 3 - 60);
