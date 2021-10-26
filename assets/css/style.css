@@ -85,13 +85,13 @@ body.dark-mode .banner .btn:hover{background-color:#2c353a; color:#fefefe;}
 body.dark-mode .link-box{background-color:#2c353a;}
 body.dark-mode .link-box p{color:#fefefe;}
 
-/*Experience Styling*/
-.social img{width:60px; height:60px; margin:0 15px;}
-.cred1, .cred2{width:30vw; height:30vw; max-width:350px; max-height:350px; min-width: 300px; min-height:300px; text-align:center; background-color:#fefefe; border-radius:30px; color:#161616 !important;}
-
-.cred1{display:inline-block; margin:-10px 15px 0 0; padding:20px 10px 0; float:left;}
+/*Bio Styling*/
+.social img{width:60px; height:60px; margin:0 30px 0 0;}
+.cred1, .cred2{width:30vw; height:30vw; max-width:350px; max-height:350px; min-width: 300px; min-height:300px; text-align:center;  border-radius:30px; color:#161616 !important;}
+.cred1{display:inline-block; margin:-10px 0 0; padding:20px 0; float:left;}
 .cred2{display:none; margin:30px auto; padding:10px 10px 20px; float:center;}
-.cred1 img, .cred2 img{width:80%; height:80%; display:block; margin:0 auto; }
+.cred1 img, .cred2 img{width:80%; height:80%; display:block; background-color:#fff; padding:5px; margin:0 auto; }
+body.dark-mode .cred1, body.dark-mode .cred2{color:#fefefe !important;}
 
 /*FAQ Styling*/
 .faq{background-color:#ddd; width:100%; margin:20px 0; padding:15px; border-radius:30px;}
@@ -123,6 +123,9 @@ body.dark-mode footer ul li a:hover {color:#aaa;}
 @media screen and (max-width:1130px){
     nav{padding:0 10%;}
     .container .row {padding:30px 10%;}
+    :root{
+        font-size:16px;
+    }
 }
 
 
@@ -135,9 +138,6 @@ body.dark-mode footer ul li a:hover {color:#aaa;}
 }
 
 @media screen and (max-width:769px){
-    :root{
-        font-size:16px;
-    }
     nav{padding:0 15px;}
     .container .row {padding:30px 15px;}
     .link-box{min-width:230px; padding:7px 15px;}
@@ -149,6 +149,7 @@ body.dark-mode footer ul li a:hover {color:#aaa;}
     h2{text-align:center;}
     h3{text-align:center;}
     .social{text-align:center;}
+    .social img{margin:0 15px;}
     .cred1{display:none;}
     .cred2{display:block; text-align:center;}
     footer img{margin:0 5px;}
