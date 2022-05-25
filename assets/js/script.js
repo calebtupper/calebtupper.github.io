@@ -1,23 +1,14 @@
 
 /*JQuery Light-Dark Mode Selector and Cookie*/
 $(document).ready(function(){
-    $(".banner h2").delay( 800 ).fadeIn();
-    $(".banner a").delay( 1600 ).fadeIn();
-    
+    $(".banner a").delay( 1000 ).fadeIn();
     $(".banner").css("height",$(window).height()-$(".header").height());
-    $(".banner h2").css("margin-top",$(window).height() / 3 - 30);
-    if($(window).width() < 770){
-        $(".banner h2").css("margin-top",$(window).height() / 3 - 60);
-    }
-    if($(window).height() < 500){
-        $(".banner h2").css("margin-top",136); 
-    }
+    
     var color = getCookie("color");
     if(color == "dark"){
         $("body").toggleClass("dark-mode");
     }
     else{} 
-    
     $("div.light-dark").click(function(){
             $("body").toggleClass("dark-mode");
             if($("body").hasClass("dark-mode")){
@@ -72,16 +63,9 @@ function getCookie(cname) {
 }
 $(window).resize(function(){
     $(".banner").css("height",$(window).height()-$(".header").height());
-    $(".banner h2").css("margin-top",$(window).height() / 3 - 30);
     if($(window).width() > 769){
         $(".banner-bg").css("border-radius","0"); 
         $(".banner").css("border-radius","0"); 
-    }
-    if($(window).width() < 770){
-        $(".banner h2").css("margin-top",$(window).height() / 3 - 60);
-    }
-    if($(window).height() < 500){
-        $(".banner h2").css("margin-top",136); 
     }
 });
 $(window).scroll(function(){
