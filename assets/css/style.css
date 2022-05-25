@@ -136,6 +136,5 @@ body.dark-mode footer ul li a:hover {color:#aaa;}
     .cred1{display:none;}
     .cred2{display:block; text-align:center;}
     footer img{margin:0 5px;}
-    footer ul li{list-style:none; display:block;}
     p{line-height:135%;}
 }
