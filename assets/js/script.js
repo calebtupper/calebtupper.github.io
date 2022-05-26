@@ -4,6 +4,11 @@ $(document).ready(function(){
         $(".banner h2").delay( 1000 ).fadeIn().delay( 2000 ).fadeOut();
         $(".banner a").delay( 2000 ).fadeIn();   
     }
+    $("a[href='/#profile']").click(function() {
+      $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+      return false;
+    });
+
     
     /*JQuery Light-Dark Mode Selector and Cookie*/
     var color = getCookie("color");
