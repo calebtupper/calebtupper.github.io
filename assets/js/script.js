@@ -1,9 +1,11 @@
-
-/*JQuery Light-Dark Mode Selector and Cookie*/
 $(document).ready(function(){
-    $(".banner a").delay( 1000 ).fadeIn();
     $(".banner").css("height",$(window).height()-$(".header").height());
+    if($(window).scrollTop() < 200 ){
+        $(".banner h2").delay( 1000 ).fadeIn().delay( 2000 ).fadeOut();
+        $(".banner a").delay( 2000 ).fadeIn();   
+    }
     
+    /*JQuery Light-Dark Mode Selector and Cookie*/
     var color = getCookie("color");
     if(color == "dark"){
         $("body").toggleClass("dark-mode");
@@ -28,14 +30,6 @@ $(document).ready(function(){
         });
 }); 
 
-/*FAQ Buttons*/
-$(document).ready(function(){
-   $(".faq").click(function(){
-       $(this).find("p").slideToggle("fast");
-       $(this).find(".plus").toggle();
-       $(this).find(".minus").toggle();
-   }); 
-});
 
 /*Set Cookie JS*/
 function setCookie(cname, cvalue, exdays){
@@ -61,17 +55,32 @@ function getCookie(cname) {
   }
   return "";
 }
+
+/*Fix styling on resize or scroll*/
 $(window).resize(function(){
     $(".banner").css("height",$(window).height()-$(".header").height());
-    if($(window).width() > 769){
-        $(".banner-bg").css("border-radius","0"); 
-        $(".banner").css("border-radius","0"); 
-    }
 });
 $(window).scroll(function(){
+    if($(window).scrollTop() > 129 ){
+        $(".profile .bio").slideDown(300);
+    }
+    else{
+        $(".profile .bio").slideUp(300);
+    }
+    if($(window).scrollTop() > 199 ){
+        $(".banner a").fadeOut();
+    }
+    else{
+        $(".banner a").fadeIn();
+    }
+    if($(window).scrollTop() > 299 ){
+        $(".profile .headshot").slideDown(300);
+    }
+    else{
+        $(".profile .headshot").slideUp(300);
+    }
+
     if($(window).width() < 770){
-        $(".banner-bg").css("border-radius","0px 0px 30px 30px");
-        $(".banner").css("border-radius","0px 0px 30px 30px"); 
+        
     }
 });
-    
