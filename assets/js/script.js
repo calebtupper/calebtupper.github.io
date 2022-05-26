@@ -69,11 +69,9 @@ $(window).scroll(function(){
     }
     if($(window).scrollTop() > 299 ){
         $(".profile .headshot").slideDown(300);
-        $(".bio .container").delay(300).slideDown(300);
     }
     else{
         $(".profile .headshot").slideUp(300);
-        $(".bio .container").slideUp(300);
     }
 
     if($(window).width() < 770){
