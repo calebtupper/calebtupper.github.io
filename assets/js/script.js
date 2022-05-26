@@ -5,7 +5,7 @@ $(document).ready(function(){
         $(".banner a").delay( 2000 ).fadeIn();   
     }
     $("a[href='/#profile']").click(function() {
-      $("html, body").animate({ scrollTop: $(document).height()-650 }, "slow");
+      $("html, body").animate({ scrollTop:550 }, "slow");
       return false;
     });
 
