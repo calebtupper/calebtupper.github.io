@@ -43,7 +43,7 @@ body.dark-mode .toggle-ball{background-color:#101010; bottom:28px;}
 .container{width:100%;}
 .container .row{display:block; padding:75px 20%;}
 .container .row.dark{display:none;}
-.btn{display:inline-block; background-color:#d0d4d6; color:#161616; min-width:150px; padding:8px 30px; border-radius:4px; margin:10px 15px; text-align:center;}
+.btn{display:inline-block; background-color:#d0d4d6; color:#161616; min-width:150px; padding:8px 30px; border-radius:50px; margin:10px 15px; text-align:center;}
 .btn:hover{background-color:#b4babf; color:#161616; cursor:pointer;}
 .clearfix:after{content: ""; display: table; clear: both;}
 body.dark-mode .row.light{display:none;}
@@ -63,7 +63,7 @@ body.dark-mode .alt{background-color:#2c353a;}
 .profile .headshot{display:block; position:relative; width:250px; height:250px; overflow:hidden; border-radius:250px; border:5px solid #fefefe; box-shadow:0px 0px 5px rgb(22,22,22,0.5); margin-top:-200px; margin-bottom:30px;}
 .profile .headshot img{position:absolute; top:-105px; left:-150px; width:500px; height:500px;}
 .profile .btn p{font-size:18px; display:inline-block; text-align:center; text-decoration:none; margin:0;}
-.profile .btn img{width:40px; height:40px; vertical-align:middle; margin-bottom:3px; display:inline-block;}
+.profile .btn img{width:40px; height:40px; vertical-align:middle; display:inline-block;}
 body.dark-mode .profile .headshot{border-color:#1e2427;}
 
 /*Footer Styling*/
