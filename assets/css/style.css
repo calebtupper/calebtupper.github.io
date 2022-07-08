@@ -43,13 +43,13 @@ body.dark-mode .toggle-ball{background-color:#101010; bottom:28px;}
 .container{width:100%;}
 .container .row{display:block; padding:75px 20%;}
 .container .row.dark{display:none;}
-.btn{display:inline-block; background-color:#b4babf; color:#161616; min-width:150px; padding:8px 30px; border-radius:4px; margin:10px 15px; text-align:center;}
-.btn:hover{background-color:#868c91; color:#161616; cursor:pointer;}
+.btn{display:inline-block; background-color:#d0d4d6; color:#161616; min-width:150px; padding:8px 30px; border-radius:4px; margin:10px 15px; text-align:center;}
+.btn:hover{background-color:#b4babf; color:#161616; cursor:pointer;}
 .clearfix:after{content: ""; display: table; clear: both;}
 body.dark-mode .row.light{display:none;}
 body.dark-mode .row.dark{display:block;}
 body.dark-mode .btn{background-color:#51565e; color:#fefefe;}
-body.dark-mode .btn:hover{background-color:#393d42; color:#fefefe; cursor:pointer;}
+body.dark-mode .btn:hover{background-color:#393e42; color:#fefefe; cursor:pointer;}
 body.dark-mode .alt{background-color:#2c353a;}
 
 /*Order Styling*/
