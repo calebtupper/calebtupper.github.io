@@ -51,15 +51,15 @@ body.dark-mode .toggle-ball{background-color:#101010; bottom:28px;}
 .container .row{display:block; padding:75px 15%;}
 .container .row.dark{display:none;}
 .alt{background-color:#ddd;}
-.btn{display:inline-block; background-color:#161616; color:#fefefe; padding:8px 30px; border-radius:50px; margin:10px 15px;}
-.btn:hover{background-color:#2c353a; color:#fefefe; cursor:pointer;}
+.btn{display:inline-block; background-color:#b4babf; color:#161616; min-width:150px; padding:8px 30px; border-radius:4px; margin:10px 15px; text-align:center;}
+.btn:hover{background-color:#868c91; color:#161616; cursor:pointer;}
 .clearfix:after{content: ""; display: table; clear: both;}
 body.dark-mode .header h1{color:#fefefe;}
 body.dark-mode .header h1:hover{color:#fefefe;}
 body.dark-mode .row.light{display:none;}
 body.dark-mode .row.dark{display:block;}
-body.dark-mode .btn{background-color:#2c353a; color:#fefefe;}
-body.dark-mode .btn:hover{background-color:#161616; color:#fefefe; cursor:pointer;}
+body.dark-mode .btn{background-color:#51565e; color:#fefefe;}
+body.dark-mode .btn:hover{background-color:#393d42; color:#fefefe; cursor:pointer;}
 body.dark-mode .alt{background-color:#2c353a;}
 
 /*Order Styling*/
@@ -67,34 +67,26 @@ body.dark-mode .alt{background-color:#2c353a;}
 .last{margin-right:0;}
 
 /*Banner Styling*/
-.banner{position:relative; display:block; width:100%; height:500px; min-height:500px; padding:30px 0; text-align:left; background-color:rgb(29,39,57,0.55);}
-.banner h2{display:none; position: absolute; bottom: 50%; right: 50%; transform:translateX(50%); text-align:center; color:#fefefe;}
-.banner .btn{display:none; position:absolute; bottom:30px; right:50%; width:250px; transform:translateX(50%); margin:0 auto; padding:10px 30px; text-align:center; border:2px solid #fefefe; background-color:transparent; color:#fefefe;}
-.banner .btn:hover{background-color:rgb(22,22,22,0.5); box-shadow:0 1px 7px rgb(0,0,0,0.5);}
-body.dark-mode .banner .btn{background-color:transparent; color:#fefefe;}
-body.dark-mode .banner .btn:hover{background-color:rgb(22,22,22,0.5); box-shadow:0 1px 7px rgb(0,0,0,0.5); color:#fefefe;}
+.banner{position:relative; display:block; width:100%; height:230px; padding:30px 0; text-align:left; background-color:rgb(29,39,57,0.55);}
 
 /*Profile Styling*/
-.profile .headshot{display:none; position:relative; width:250px; height:250px; overflow:hidden; border-radius:250px; border:5px solid #fefefe; box-shadow:0px 0px 5px rgb(22,22,22,0.5); margin-top:-200px; margin-bottom:30px;}
+.profile .headshot{display:block; position:relative; width:250px; height:250px; overflow:hidden; border-radius:250px; border:5px solid #fefefe; box-shadow:0px 0px 5px rgb(22,22,22,0.5); margin-top:-200px; margin-bottom:30px;}
 .headshot img{position:absolute; top:-105px; left:-150px; width:500px; height:500px;}
-.bio h4{margin-bottom:5px;}
-.bio .container a{display: flex; align-items:center; margin: -15px -15px -30px;}
-.bio img{width:50px; height:50px; margin:0 5px;}
-.bio .social-light{display:block; margin:0;}
-.bio .social-dark{display:none; margin:0;}
-body.dark-mode .bio .social-light{display:none;}
-body.dark-mode .bio .social-dark{display:block;}
 body.dark-mode .profile .headshot{border-color:#1e2427;}
+
+/*Instagram Stuff*/
+.row.instagram-row{display:flex; align-items:flex-start;}
+.instagram-media-rendered{display:inline-block !important;}
 
 /*Link Tree Styling*/
 .link-tree{min-height:600px;}
 .link-tree h2{font-weight:300;}
 .link-list{display:flex; text-align:center;}
-.link-box{display:block; background-color:#ddd; width:40%; min-width:300px; margin: 15px auto; padding:15px; border-radius:50px;}
+.link-box{display:block; background-color:#b4babf; width:40%; min-width:300px; margin: 15px auto; padding:15px; border-radius:50px;}
 .link-box p{font-size:18px; display:inline-block; text-align:center; text-decoration:none; color:#161616; margin:0;}
 .link-box img{width:40px; height:40px; vertical-align:middle; margin-bottom:3px; display:inline-block;}
 .link-box:hover{cursor:pointer; box-shadow:0px 1px 5px rgb(0,0,0,0.5);}
-body.dark-mode .link-box{background-color:#2c353a;}
+body.dark-mode .link-box{background-color:#51565e;}
 body.dark-mode .link-box p{color:#fefefe;}
 
 /*Footer Styling*/
@@ -115,31 +107,27 @@ body.dark-mode footer ul li a:hover {color:#aaa;}
 }
 
 @media screen and (max-width:1130px){
-    nav{padding:0 10%;}
     .container .row {padding:75px 10%;}
 }
 
 
 @media screen and (max-width:949px){
     .light-dark{left:87%; z-index:10;}
-    nav ul{display:none;}
-    nav{padding:0 5%;}
     .container .row {padding:20px 5%;}
     h2{font-size:1.75rem;}
     h3{font-size:1.35rem;}
+    .row.instagram-row{display:block;}
+    .instagram-media-rendered{display:block !important; margin:15px auto !important;}
 }
 
 @media screen and (max-width:769px){
-    nav{padding:0 15px;}
     .container .row {padding:45px 15px;}
-    .link-box{min-width:230px; padding:7px 15px;}
-    .cta{text-align:center; margin-top:20px;}
-    .btn{display:block; max-width:250px; text-align:center; margin:15px 0; padding:8px 15px;}
-    .banner{text-align: center;}
-    .banner .btn{margin-top:15px;}
-    .bio img{margin: 5px 0;}
-    .profile .headshot{width:200px; height:200px; border-radius:200px; margin-top:-150px;}
+    .btn{display:block; text-align:center; max-width:400px; margin:15px 0; padding:8px 15px;}
+    .profile h2{text-align:center;}
+    .profile p{text-align:center;}
+    .profile .headshot{width:200px; height:200px; border-radius:200px; margin:-150px auto 15px;}
     .headshot img{width:400px; height:400px; top:-85px; left:-120px;}
+    .link-box{min-width:230px; padding:7px 15px;}
     footer img{margin:0 5px;}
     p{line-height:135%;}
 }

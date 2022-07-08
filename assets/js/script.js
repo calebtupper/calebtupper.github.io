@@ -1,15 +1,4 @@
-$(document).ready(function(){
-    $(".banner").css("height",$(window).height()-$(".header").height());
-    if($(window).scrollTop() < 200 ){
-        $(".banner h2").delay( 1000 ).fadeIn().delay( 2000 ).fadeOut();
-        $(".banner a").delay( 2000 ).fadeIn();   
-    }
-    $("a[href='/#profile']").click(function() {
-      $("html, body").animate({ scrollTop:500 }, "slow");
-      return false;
-    });
-
-    
+$(document).ready(function(){    
     /*JQuery Light-Dark Mode Selector and Cookie*/
     var color = getCookie("color");
     if(color == "dark"){
@@ -60,26 +49,3 @@ function getCookie(cname) {
   }
   return "";
 }
-
-/*Fix styling on resize or scroll*/
-$(window).resize(function(){
-    $(".banner").css("height",$(window).height()-$(".header").height());
-});
-$(window).scroll(function(){
-    if($(window).scrollTop() > 199 ){
-        $(".banner a").fadeOut();
-    }
-    else{
-        $(".banner a").fadeIn();
-    }
-    if($(window).scrollTop() > 299 ){
-        $(".profile .headshot").slideDown(300);
-    }
-    else{
-        $(".profile .headshot").slideUp(300);
-    }
-
-    if($(window).width() < 770){
-        
-    }
-});
