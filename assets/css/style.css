@@ -21,9 +21,11 @@ p{font-size:1rem; font-family: 'montserrat', sans-serif; font-weight:300; text-a
 a{font-size:1rem; font-family: 'montserrat', sans-serif; font-weight:300; color:#2E7EB5; text-decoration:none;}
 a:hover{color:#6FC2E9; cursor:pointer;}
 li{font-size:1rem; font-family: 'montserrat', sans-serif; font-weight:300;margin-bottom:5px; margin-left: 25px;}
+label{font-size:1.1rem; font-family: 'montserrat', sans-serif !important; font-weight:500 !important; color:#161616 !important;}
 hr{background-image: linear-gradient(to right,transparent,#ccc,transparent);border:0; height:1px; margin:8px 0;}
 body.dark-mode a{color:#6FC2E9;}
 body.dark-mode a:hover{color:#2E7EB5;}
+label.dark-mode{color:#fefefe !important;}
 
 /*Text-Align Classes*/
 .tar{text-align:right;}
