@@ -132,7 +132,7 @@
                     <a href="https://www.linkedin.com/in/calebtupper/" target="_blank" role="link"><img src="/assets/img/web-icons/linkedin-white.png" alt="LinkedIn" /></a>
                     <a href="https://www.instagram.com/caleb.tupper/" target="_blank" role="link"><img src="/assets/img/web-icons/instagram-white.png" alt="Instagram" /></a>
                 </div>-->
-                <ul>
+                <ul style="color: #fefefe;">
                     <li><a href="/" role="link">Home</a></li>
                     <li><a href="/contact" role="link" target="_blank">Contact</a></li>
                     <li><a href="https://www.linkedin.com/in/calebtupper/" role="link" target="_blank">LinkedIn</a></li>
@@ -146,16 +146,41 @@
         <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/47121988.js"></script>
         <!-- End of HubSpot Embed Code -->
 <script>
-let wheelSegments = [
-  "Run on fumes",
-  "Airplane mode all day",
-  "Separate and find each other",
-  "Only $10 for food",
-  "Walk everywhere",
-  "No technology for 24h",
-  "Random act of kindness",
-  "Give away your meal"
-];
+const SEGMENTS_KEY = "wheelSegments";
+const SEGMENTS_EXP_KEY = "wheelSegmentsExp";
+const SEGMENTS_EXP_DAYS = 30;
+
+// Load segments from localStorage if not expired
+function loadSegments() {
+  const exp = localStorage.getItem(SEGMENTS_EXP_KEY);
+  const now = Date.now();
+  if (exp && now < parseInt(exp, 10)) {
+    const cached = localStorage.getItem(SEGMENTS_KEY);
+    if (cached) {
+      return JSON.parse(cached);
+    }
+  }
+  return [
+    "Run on fumes",
+    "Airplane mode all day",
+    "Separate and find each other",
+    "Only $10 for food",
+    "Walk everywhere",
+    "No technology for 24h",
+    "Random act of kindness",
+    "Give away your meal"
+  ];
+}
+
+// Save segments to localStorage with expiration
+function saveSegments(segments) {
+  localStorage.setItem(SEGMENTS_KEY, JSON.stringify(segments));
+  localStorage.setItem(SEGMENTS_EXP_KEY, Date.now() + SEGMENTS_EXP_DAYS * 24 * 60 * 60 * 1000);
+}
+
+// Use cached or default segments
+let wheelSegments = loadSegments();
+
 
 let colors = ["#e5c07b", "#d4b483"];
 let clickSound = new Audio("https://cdn.pixabay.com/audio/2022/03/15/audio_ae1cb0d57d.mp3");
@@ -289,21 +314,18 @@ spinBtn.addEventListener("click", () => {
   rotateWheel();
 }); // <-- Remove stray 's' here
 
-updateBtn.addEventListener("click", () => {
+pdateBtn.addEventListener("click", () => {
   const newSegments = segmentsTextarea.value.split("\n").map(s => s.trim()).filter(s => s);
   if (newSegments.length > 0) {
     wheelSegments = newSegments;
+    saveSegments(wheelSegments); // Save to localStorage
     drawWheel();
-    // Optionally keep textarea in sync:
-    // segmentsTextarea.value = wheelSegments.join("\n");
   }
 });
 
 segmentsTextarea.value = wheelSegments.join("\n");
 drawWheel();
 
-segmentsTextarea.value = wheelSegments.join("\n");
-drawWheel();
 </script>
 </body>
 </html>
