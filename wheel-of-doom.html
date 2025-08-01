@@ -314,7 +314,7 @@ spinBtn.addEventListener("click", () => {
   rotateWheel();
 }); // <-- Remove stray 's' here
 
-pdateBtn.addEventListener("click", () => {
+updateBtn.addEventListener("click", () => {
   const newSegments = segmentsTextarea.value.split("\n").map(s => s.trim()).filter(s => s);
   if (newSegments.length > 0) {
     wheelSegments = newSegments;
